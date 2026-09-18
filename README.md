@@ -2,9 +2,7 @@
 
 # Flutter E-Commerce Virtual Try-On
 
-### Graduation Project
-
-A modern Flutter e-commerce application with a Virtual Try-On experience.
+A Flutter graduation project that combines a modern e-commerce experience with a Virtual Try-On feature.
 
 </div>
 
@@ -12,27 +10,19 @@ A modern Flutter e-commerce application with a Virtual Try-On experience.
 
 ## About the Project
 
-This project is a graduation project developed by a team of **5 members**.
+This project is developed by a team of **5 members** as part of our Flutter graduation project.
 
-The application combines a complete **e-commerce shopping experience** with a **Virtual Try-On feature**, allowing users to preview supported products before making a purchase.
+The application provides a complete e-commerce experience where users can browse products, search and filter items, manage their wishlist and cart, complete orders, and use a **Virtual Try-On feature** to preview supported products before purchasing.
 
-The goal is to make online shopping more interactive, personalized, and convenient.
+The main goal is to create a more interactive and personalized online shopping experience using Flutter and modern mobile development concepts.
 
 ---
 
-## Features
+## Main Features
 
-### Authentication
-
-- User registration
-- Login and logout
-- Forgot password
-- Profile management
-
-### E-Commerce
-
+- User authentication
 - Home screen
-- Categories
+- Product categories
 - Product listing
 - Product details
 - Product search
@@ -41,43 +31,177 @@ The goal is to make online shopping more interactive, personalized, and convenie
 - Shopping cart
 - Checkout
 - Order history
-
-### Virtual Try-On
-
-- Select a supported product
-- Upload an image or use the camera
-- Apply the selected product to the image
-- Preview the Try-On result
-- Retry or save the generated result
-- Add the selected product to the cart
+- User profile
+- Virtual Try-On
+- Camera and gallery integration
+- REST API integration
 
 ---
 
-## User Flow
+## Virtual Try-On
+
+The Virtual Try-On feature allows users to preview supported products before making a purchase.
+
+Basic flow:
 
 ```text
-Splash
-   |
-Onboarding
-   |
-Login / Register
-   |
-Home
-   |
-Browse Products
-   |
-Product Details
-   |
-   |---- Add to Wishlist
-   |
-   |---- Add to Cart
-   |
-   `---- Virtual Try-On
-              |
-         Preview Result
-              |
-          Add to Cart
-              |
-           Checkout
-              |
-       Order Confirmation
+Select Product
+      |
+Virtual Try-On
+      |
+Upload Image / Camera
+      |
+Image Processing
+      |
+Preview Result
+      |
+Add to Cart
+```
+
+---
+
+## Tech Stack
+
+| Technology | Usage |
+|---|---|
+| Flutter | Mobile application development |
+| Dart | Programming language |
+| REST API | Backend communication |
+| Dio / HTTP | API requests |
+| State Management | Application state handling |
+| Local Storage | Store local app data |
+| Image Picker / Camera | Image selection and capture |
+| AI / Image Processing API | Virtual Try-On functionality |
+| Git | Version control |
+| GitHub | Team collaboration |
+
+---
+
+## Project Structure
+
+```text
+lib/
+|
+|-- core/
+|   |-- constants/
+|   |-- network/
+|   |-- routes/
+|   |-- theme/
+|   `-- utils/
+|
+|-- features/
+|   |-- auth/
+|   |-- home/
+|   |-- categories/
+|   |-- products/
+|   |-- search/
+|   |-- wishlist/
+|   |-- cart/
+|   |-- checkout/
+|   |-- orders/
+|   |-- profile/
+|   `-- virtual_try_on/
+|
+|-- shared/
+|   |-- models/
+|   |-- widgets/
+|   `-- services/
+|
+`-- main.dart
+```
+
+---
+
+## Main Modules
+
+| Module | Description |
+|---|---|
+| Authentication | Login, registration, and account management |
+| Home | Main shopping experience |
+| Products | Product listing and product details |
+| Categories | Browse products by category |
+| Search | Search, filter, and sort products |
+| Wishlist | Manage favorite products |
+| Cart | Manage selected products |
+| Checkout | Complete the purchasing process |
+| Orders | View previous orders |
+| Profile | Manage user information |
+| Virtual Try-On | Preview supported products virtually |
+
+---
+
+## Team
+
+This project is developed by a team of **5 Flutter developers**.
+
+| Member | Role |
+|---|---|
+| Member 1 | Flutter Developer |
+| Member 2 | Flutter Developer |
+| Member 3 | Flutter Developer |
+| Member 4 | Flutter Developer |
+| Member 5 | Flutter Developer |
+
+---
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Open the project:
+
+```bash
+cd flutter-ecommerce-virtual-tryon
+```
+
+Install dependencies:
+
+```bash
+flutter pub get
+```
+
+Run the application:
+
+```bash
+flutter run
+```
+
+---
+
+## Requirements
+
+- Flutter SDK
+- Dart SDK
+- Android Studio or Visual Studio Code
+- Android Emulator or physical device
+- Git
+
+Check your Flutter environment:
+
+```bash
+flutter doctor
+```
+
+---
+
+## Repository
+
+```text
+flutter-ecommerce-virtual-tryon
+```
+
+---
+
+## Project Status
+
+Currently under development.
+
+---
+
+## License
+
+This project is created for educational and graduation purposes.
