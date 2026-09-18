@@ -132,16 +132,15 @@ lib/
 
 ## Team
 
-This project is developed by a team of **5 Flutter developers**.
+This project is developed by a team of **5 members**.
 
 | Member | Role |
 |---|---|
-| Member 1 | Flutter Developer |
-| Member 2 | Flutter Developer |
-| Member 3 | Flutter Developer |
-| Member 4 | Flutter Developer |
+| Donia Alhosin | Flutter Developer |
+| Emad  Hani | Flutter Developer |
+| Mohey | Flutter Developer |
+| Saga | Flutter Developer |
 | Member 5 | Flutter Developer |
-
 ---
 
 ## Getting Started
